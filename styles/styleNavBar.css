@@ -1,0 +1,189 @@
+:root {
+    font-size: 16px;
+}
+
+nav { /*setari de baza nav*/
+    height: 5rem;
+    background-color: #171e22;
+    position: fixed;
+    width: 100%;
+}
+
+#elementeNav { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+#elementeNav > p {
+    color: #F3FCF0;
+    margin-left: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#elementeNav ul {
+    list-style-type: none;
+}
+
+#elementeNav > ul {
+    margin-right: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+#elementeNav > ul > li {
+    color: #F3FCF0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 3rem;
+    line-height: 3rem;
+    transition: 0.7s;
+}
+
+#elementeNav > ul > li > a {
+    text-decoration: none;
+    color: #F3FCF0;
+}
+
+#elementeNav > ul > li:hover {
+    background-color: #F3FCF0;
+    color: #171e22;
+    transition: 0.7s;
+}
+
+#elementeNav > ul > li:hover > a {
+    color: #171e22;
+}
+
+
+#elementeNav > ul > li:hover > #listaLocatiiOferta {
+    background-color: #F3FCF0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    margin-left:  -1rem;
+    margin-right: -1rem;
+}
+
+#elementeNav > ul > li:hover > #listaLocatiiOferta a {
+    text-decoration: none;
+    color: #171e22;
+    display: block;
+}
+
+#elementeNav > ul > li:hover > #listaLocatiiOferta > li:hover {
+    background-color: #171e22;
+    color: #F3FCF0;
+    text-align: center;
+    transition: 0.7s;
+}
+
+#elementeNav > ul > li:hover > #listaLocatiiOferta > li:hover a {
+    color: #F3FCF0;
+} 
+
+
+#listaLocatiiOferta {
+    display: none;
+    z-index: 100;
+}
+
+#elementeNavMediaQ > ul {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        margin-bottom: 3rem;
+    }
+    #elementeNav > ul {
+        display: none;
+    }
+    #elementeNav {
+        justify-content: center;
+    }
+
+    #elementeNavMediaQ {
+        position: fixed;
+        width: 100%;
+    }
+
+    #elementeNavMediaQ > ul {
+        margin-top: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        background-color: #363d42;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    #elementeNavMediaQ > ul > li{
+        display: block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        transition: 0.7s;
+    }
+
+    #listaLocatiiOfertaMediaQ {
+        display: none;
+        z-index: 100;
+    }
+
+    #elementeNavMediaQ > ul a, li {
+        text-decoration: none;
+        color: #F3FCF0;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        list-style-type: none;
+    }
+
+    #elementeNavMediaQ > ul > li{
+        display: block;
+    }
+
+    #elementeNavMediaQ > ul > li:hover > a{
+        color: #363d42;
+    }
+
+    #elementeNavMediaQ > ul > li:hover {
+        background-color: #F3FCF0;
+        color: #363d42;
+        transition: 0.7s;
+    }
+
+    #elementeNavMediaQ > ul > li:hover > #listaLocatiiOfertaMediaQ {
+        display: flex;
+        flex-direction: column;
+        background-color: #363d42;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding-left: 0;
+    }
+
+    #elementeNavMediaQ > ul > li:hover > #listaLocatiiOfertaMediaQ > li > a {
+        display: block;
+        text-align: center;
+    }
+
+    #elementeNavMediaQ > ul > li:hover > #listaLocatiiOfertaMediaQ > li > a:hover {
+        background-color: #F3FCF0;
+        color: #363d42;
+    }
+
+}

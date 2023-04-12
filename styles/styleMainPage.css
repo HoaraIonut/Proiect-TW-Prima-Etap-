@@ -1,0 +1,9 @@
+:root {
+    --backgroundColorBody: #F3FCF0;  
+}
+
+body {
+    background-color: var(--backgroundColorBody);
+    margin: 0;
+    padding: 0;
+}
