@@ -7,6 +7,7 @@ nav { /*setari de baza nav*/
     background-color: #171e22;
     position: fixed;
     width: 100%;
+    z-index: 9999;
 }
 
 #elementeNav { 
@@ -116,6 +117,11 @@ nav { /*setari de baza nav*/
         justify-content: center;
     }
 
+    #elementeNav > p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     #elementeNavMediaQ {
         position: fixed;
         width: 100%;
@@ -145,11 +151,23 @@ nav { /*setari de baza nav*/
         z-index: 100;
     }
 
-    #elementeNavMediaQ > ul a, li {
+    #elementeNavMediaQ > ul li a{
         text-decoration: none;
         color: #F3FCF0;
         font-weight: 700;
         font-family: 'Poppins', sans-serif;
+        list-style-type: none;
+    }
+
+    #elementeNavMediaQ > ul > li{
+        text-decoration: none;
+        color: #F3FCF0;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        list-style-type: none;
+    }
+
+    #elementeNavMediaQ > ul > li > ul {
         list-style-type: none;
     }
 

@@ -8,35 +8,37 @@
         <link rel="icon" type="image/x-icon" href="favicon.png"> 
     </head>
     <body>
-        <nav>
-            <div id = "elementeNav">
-                <p>TRAVEL NOW</p>
-                <ul>
-                    <li><a href="">Despre noi</a></li>
-                    <li>Ofertele Companiei
-                        <ul id = "listaLocatiiOferta">
-                            <li><a href="">Mula</a></li>
-                            <li><a href="">New York</a></li>
-                            <li><a href="">Dubai</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div id = "elementeNavMediaQ">
-                <ul>
-                    <li><a href="">Despre noi</a></li>
-                    <li>Ofertele Companiei
-                        <ul id = "listaLocatiiOfertaMediaQ">
-                            <li><a href="">Mula</a></li>
-                            <li><a href="">New York</a></li>
-                            <li><a href="">Dubai</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+        <header>
+            <nav>
+                <div id = "elementeNav">
+                    <p>TRAVEL NOW</p>
+                    <ul>
+                        <li><a href="">Despre noi</a></li>
+                        <li>Ofertele Companiei
+                            <ul id = "listaLocatiiOferta">
+                                <li><a href="">Mula</a></li>
+                                <li><a href="">New York</a></li>
+                                <li><a href="">Dubai</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div id = "elementeNavMediaQ">
+                    <ul>
+                        <li><a href="">Despre noi</a></li>
+                        <li>Ofertele Companiei
+                            <ul id = "listaLocatiiOfertaMediaQ">
+                                <li><a href="">Mula</a></li>
+                                <li><a href="">New York</a></li>
+                                <li><a href="">Dubai</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <!--NAV-->
         <section id = "containerPoze">
             <a class="linkPoza" href="">
@@ -55,6 +57,85 @@
         <section id = "containerPozeMediaQ"> <!--Aici o să fie o galerie făcută cu JS, am pus doar o imagine care să țină locul-->
             <img src="./nyPozaMediaQ.jpg" alt="Fotografie Mula">
             <p>Vino și tu în călătoria vieții tale!</p>
-        </section>     
+        </section>
+        <!--GALERIE 1-->
+        <section id = "descriereCompanie">
+            <h1>Bine ai venit!</h1>
+            <h2>Scurtă prezentare: </h2>
+            <div>
+                <p>Salutare, numele nostru este TRAVEL NOW. Compania noastră a fost fondată în anul 1993 la Cluj-Napoca, iar acum ne reprezintă în țară 12 agenții de călătorie, 6 agenții proprii și 6 agenții francizate, în orașele: București, Cluj-Napoca, Timișoara, Sibiu, Suceava, Constanța, Iași, Mediaș, Alba-Iulia, Hunedoara și Reșița.
+                    Am pornit afacerea cu <b>3 birouri</b>, <b>1 seif</b> și <b>documente de călătorie</b>, în cadrul recepției unui hotel.
+                </p>
+                <p>
+                    Turiștii ne aleg datorită consultanților noștri de călătorie, cu experiență, în număr de peste <b>60</b>. Ne-am calificat singuri oamenii, am ajutat mereu și la calificarea colegilor din industria de travel, inclusiv prin Școala de Turism EXIMTUR. Credem că oamenii sunt cheia succesului și ne mândrim cu o vechime medie a angajaților în companie de <b>10 ani</b>.
+                </p>
+            </div>
+        </section>
+        <!--SCURTA PREZENTARE-->
+        <section id = "descriereActivitate">
+            <h2>Ce facem? </h2>
+            <p>In fiecare an ne ocupăm de peste 70.000 de călătorii: propunem variante, rezervăm și oferim consultanță turiștilor.</p>
+            <h2>Concret: </h2>
+            <ul>
+                <li><b>rezervăm și emitem bilete</b> de avion, de tren sau orice transport auto</li>
+                <li><b>facem rezervări hoteliere</b></li>
+                <li>facilităm servicii de <b>rent-a-car</b> și <b>asigurări de călătorie</b></li>
+            </ul>
+            <p>Colaborăm cu aproape <b>1000 de hoteluri și pensiuni</b> din țară și mai mult de <b>500 de companii</b> ne-au încredințat călătoriile lor de afaceri. Am organizat cu succes numeroase evenimente de tip conferință, team-building, board-meeting, management retreat, programe incentive, petreceri și aniversări de companie. <b>Suntem alături de TIFF, ca partener de ospitalitate, de 11 ani</b>.</p>
+            <p>De-a lungul timpului, am emis peste <b>500.000 de Bilete de avion</b> și am făcut peste <b>1 milion de cazari</b>, pentru turiști români și străini. Pentru cei din străinătate, am conceput trasee și am organizat tururi ghidate în cele mai frumoase zone ale țării.</p>
+            <h2>Oferte curente:</h2>
+            <p>Compania noastră oferă <b>3 variante de călătorie</b> în străinătate, locuri cu o poveste desprinsă din basme, <b>combinația perfectă dintre istorie si tipuri de modern în antiteză</b>.</p>
+        </section>
+        <!--DESCRIERE ACTIVITATE-->
+        <article id="galeriePromo">
+            <h2>Fotografii din călătorii anterioare: </h2>
+            <div id = "containerPozeGrid">
+                <figure class="itemGalerie">
+                    <img src="images/fotografie1.jpg" alt = "Fotografie 1" title = "Fotografie 1" class="imagineGalerie" id = "imagine1">
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/fotografie2.jpg" alt = "Fotografie 2" title = "Fotografie 2" class="imagineGalerie" id = "imagine2"> 
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/Fotografie3.jpg" alt = "Fotografie 3" title = "Fotografie 3" class="imagineGalerie" id = "imagine3">
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/Fotografie4.jpg" alt = "Fotografie 4" title = "Fotografie 4" class="imagineGalerie" id = "imagine4">
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/Fotografie5.jpg" alt = "Fotografie 5" title = "Fotografie 5" class="imagineGalerie" id = "imagine5">
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/Fotografie6.jpg" alt = "Fotografie 6" title = "Fotografie 6" class="imagineGalerie" id = "imagine6">
+                </figure>
+                <figure class="itemGalerie"> 
+                    <img src="images/Fotografie7.jpg" alt = "Fotografie 7" title = "Fotografie 7" class="imagineGalerie" id = "imagine7">
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/Fotografie8.jpg" alt = "Fotografie 8" title = "Fotografie 8" class="imagineGalerie" id = "imagine8">
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/Fotografie9.jpg" alt = "Fotografie 9" title = "Fotografie 9" class="imagineGalerie" id = "imagine9">
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/Fotografie10.jpg" alt = "Fotografie 10" title = "Fotografie 10" class="imagineGalerie" id = "imagine10">
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/Fotografie11.jpg" alt = "Fotografie 11" title = "Fotografie 11" class="imagineGalerie" id = "imagine11">
+                </figure>
+                <figure class="itemGalerie">
+                    <img src="images/Fotografie12.jpg" alt = "Fotografie 12" title = "Fotografie 12" class="imagineGalerie" id = "imagine12">
+                </figure>
+            </div>
+        </article> 
+        <!--GALERIE 2-->   
+        <section id="concluzie">
+            <p>Aceastea fiind spuse, propunem să studiați ofertele curente, iar în cazul în care sunteți interesat <span>să ne contactați!</span></p>
+        </section>
+        <footer>
+            <div id = "elementeFooter">
+                <p>©2023 Hoară Dumitru-Ionuț, Proiect TW</p>
+            </div>
+        </footer>
     </body>
 </html>

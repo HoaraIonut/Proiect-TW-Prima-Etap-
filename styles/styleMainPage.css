@@ -1,9 +1,166 @@
 :root {
-    --backgroundColorBody: #F3FCF0;  
+    --backgroundColorBody: #F3FCF0;
+    --fontColorBody: #171e22;   
+}
+
+h2 {
+    display: inline;
+    background-color: yellow;
+    padding: 0.3rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2::before{
+    content: "📌 ";
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-color: var(--backgroundColorBody);
     margin: 0;
     padding: 0;
+}
+
+#descriereCompanie {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#descriereCompanie > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#descriereCompanie h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+#descriereCompanie p {
+    margin: 3rem 1rem 3rem 1rem;
+}
+
+#descriereActivitate {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#descriereActivitate p {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#descriereActivitate ul {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+#descriereActivitate ul li {
+    margin-bottom: 1rem;
+}
+
+#galeriePromo {
+    display: inline;
+    margin-left: 2rem;
+}
+
+#containerPozeGrid {
+    display: grid;
+    grid-gap: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(3, 28vw);
+    margin-top: 3rem;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.imagineGalerie {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*imaginea isi face resize cat sa se potriveasca cu containerul*/
+    display: block;
+    opacity: 50%;
+    transition: 1s ease-in-out;
+    z-index: 10;
+}
+
+.imagineGalerie:hover {
+    opacity: 100%;
+    transition: 1s ease-in-out;
+    transform: scale(1.1);
+    z-index: 200;
+}
+
+#concluzie{
+    margin-bottom: 3rem;
+}
+
+#concluzie > p{
+    display: block;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#concluzie span {
+    text-transform: uppercase;
+    background-color: yellow;
+}
+
+#concluzie span::after {
+    content: "❤️";
+}
+
+footer {
+    height: 3rem;
+    line-height: 3rem;
+    background-color: #171e22;
+}
+
+footer p {
+    color: #F3FCF0;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    #containerPozeGrid {
+        grid-template-columns: repeat(2, 30vw);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #descriereCompanie {
+        margin-bottom: 3rem;
+    }
+
+    #descriereCompanie  div{
+        flex-direction: column;
+    }
+    #descriereCompanie div  p {
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    #containerPozeGrid {
+        grid-template-columns: repeat(1, 70vw);
+    }
 }
