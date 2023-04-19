@@ -3,6 +3,18 @@
     --fontColorBody: #171e22;   
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #171e22;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #F3FCF0;
+}
+
 h2 {
     display: inline;
     background-color: yellow;

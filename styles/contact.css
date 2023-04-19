@@ -1,0 +1,180 @@
+:root {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #171e22;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #F3FCF0;
+}
+
+body {
+    background-color: #F3FCF0;
+    margin: 0;
+}
+
+#contact {
+    padding-top: 10rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact > p {
+    font-size: 1.3rem;
+    width: 60%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    background-color: yellow;
+    padding: 0.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.tipDiv1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+.tipDiv1 div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#oferte {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#oferte p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.tipDiv2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tipDiv2 > label {
+    margin-bottom: 1rem;
+} 
+
+input[type="text"], input[type="email"] {
+    background-color: rgb(255, 255, 0, 20%);
+    border-radius: 1rem;
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s ease-in-out;
+}
+
+input[type="text"]:hover, input[type="email"]:hover {
+    background-color: yellow;
+    transition: .5s ease-in-out;
+}
+
+textarea{
+    width: 70%;
+    background-color: rgb(255, 255, 0, 20%);
+    transition: .5s ease-in-out;
+    border-radius: 1rem;
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+}
+
+textarea:hover {
+    background-color: rgb(255, 255, 0, 100%);
+    transition: .5s ease-in-out;
+}
+
+#sendButton {
+    margin-top: 2rem;
+    width: 30%;
+    background-color: rgb(255, 255, 0, 20%);
+    transition: .7s ease-in-out;
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sendButton:hover {
+    background-color: green;
+    transition: .7s ease-in-out;
+}
+
+footer {
+    height: 3rem;
+    line-height: 3rem;
+    background-color: #171e22;
+}
+
+footer p {
+    color: #F3FCF0;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    img {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+    #contact > p {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+    .tipDiv1 {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .tipDiv1 div {
+        width: 100%;
+    }
+
+    .tipDiv1  input {
+        width: 90%;
+    }
+    textarea {
+        width: 90%;
+    }
+    #sendButton {
+        width: 60%;
+    }
+}

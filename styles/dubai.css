@@ -1,0 +1,497 @@
+@keyframes miscaPdreapta{
+    from {
+        background-color:#A6F6F1;
+        border-color:#F5F3C1;
+        border-width: 0.2rem;
+        border-style: solid;
+        color: #F5F3C1;
+        border-radius: 1rem;
+    }
+    to {
+        background-color:#F5F3C1;
+        border-color: #213E3B;
+        border-width: 0.2rem;
+        border-style: solid;
+        color: #213E3B;
+        border-radius: 1rem;
+    }
+}
+
+:root {
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #171e22;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #F3FCF0;
+}
+
+body {
+    margin: 0;
+    background-color: #F5F3C1;
+}
+
+#containerPrezentare {
+    width: 100%;
+    background-color: #213E3B;
+    padding-top: 3rem;
+    padding-bottom: -3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+#containerPrezentare img {
+    width: 50vw;
+    height: 80vh;
+    object-fit: cover;
+    border-width: 0.5vw;
+    border-color: #A6F6F1;
+    border-style: solid;
+    border-radius: 2rem;
+    box-shadow: 0.7rem 0.7rem #41AEA9;
+}
+
+#prezentareText {
+    width: 30vw;
+    color: #A6F6F1;
+    font-family: 'Poppins', sans-serif;
+}
+
+#prezentareText h1 {
+    font-size: 2rem;
+}
+
+#prezentareText p {
+    font-size: 1.3rem;
+}
+
+#containerLocatie {
+    background-color: #A6F6F1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    justify-content: space-around;
+}
+
+#containerLocatie h2{
+    padding-top: 2rem;
+    color: #213E3B;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#prezentareLocatie { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: reds;
+    width: 100%;
+}
+
+#prezentareLocatie img {
+    width: 45vw;
+    height: 75vh;
+    object-fit: cover;
+    border-width: 0.5vw;
+    border-color: #41AEA9;
+    border-style: solid;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem #2f7a76; 
+}
+
+#prezentareLocatie ul {
+    width: 30vw;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#prezentareLocatie ul li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #213E3B;
+}
+
+#containerSezoane {
+    width: 100%;
+    background-color: #213E3B;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+}
+
+#containerSezoane  h2 {
+    padding-top: 2rem;
+    color: #A6F6F1;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.infoCard {
+    width: 80vw;
+    color: #A6F6F1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoCard > p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #213E3B;
+    animation-name: miscaPdreapta;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.infoCard div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infoCard div p {
+    width: 35vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: 0.7s ease-in-out;
+}
+
+.infoCard div p:nth-of-type(even):hover {
+    background-color: red;
+    color: #F5F3C1;
+    transition: 0.7s ease-in-out;
+}
+
+.infoCard div p:nth-of-type(odd):hover {
+    background-color: green;
+    color: #F5F3C1;
+    transition: 0.7s ease-in-out
+}
+
+#containerProgram {
+    width: 100%;
+    background-color: #A6F6F1;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerArticole {
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-areas: 
+    "a a a b b b"
+    "a a a b b b"
+    "a a a b b b"
+    "c c c c c c"
+    "c c c c c c";
+}
+
+#containerProgram h2{
+    padding-top: 2rem;
+    color: #213E3B;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#containerProgram h3 {
+    color: #213E3B;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#containerProgram article ul {
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #213E3B;
+    padding-left: 0;
+}
+
+#containerProgram p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #213E3B;
+}
+
+.activitati {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: #213E3B;
+    border-width: 0.3vw;
+    border-radius: 1rem;
+    border-style: solid;
+    transition: 1s ease-in;
+}
+
+#activitatiSaptamana1 {
+    grid-area: a;
+}
+
+#activitatiSaptamana2 {
+    grid-area: b;
+}
+
+#programCazare {
+    grid-area: c;
+}
+
+.activitati:hover {
+    background-color: #F5F3C1;
+    transition: 1s ease-in;
+}
+
+#containerArticole .activitati:hover > h3{
+    color: #213E3B;
+}
+
+#containerArticole .activitati:hover > p{
+    color: #213E3B;
+}
+
+.activitati:hover li {
+    color: #213E3B;
+}
+
+#containerGalerie {
+    width: 100%;
+    background-color: #213E3B;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+}
+
+#containerGalerie h2 {
+    padding-top: 2rem;
+    color: #A6F6F1;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fotoGalerie {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-color: #213E3B;
+    border-width: 0.2rem;
+    border-style: solid;
+    border-radius: 2rem;
+    opacity: 0.7;
+    transition: 0.7s ease-out;
+}
+
+.fotoGalerie:hover {
+    opacity: 1;
+    border-color: #A6F6F1;
+    transition: 0.7s ease-out;
+    transform: scale(1.1);
+    z-index: 200;
+}
+
+#galerieFoto {
+    display: grid;
+    width: 70vw;
+    height: 75vh;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "i1 i1 i1 i2 i2 i2 i3 i3 i3 i4 i4 i4"
+    "i1 i1 i1 i2 i2 i2 i3 i3 i3 i4 i4 i4"
+    "i5 i5 i5 i6 i6 i6 i3 i3 i3 i8 i8 i8"
+    "i5 i5 i5 i6 i6 i6 i7 i7 i7 i8 i8 i8"
+    "i5 i5 i5 i6 i6 i6 i7 i7 i7 i8 i8 i8";
+    margin-bottom: 3rem;
+}
+
+#imagine1 {
+    grid-area: i1;
+}
+
+#imagine2 {
+    grid-area: i2;
+}
+
+#imagine3 {
+    grid-area: i3;
+}
+
+#imagine4 {
+    grid-area: i4;
+}
+
+#imagine5 {
+    grid-area: i5;
+}
+
+#imagine6 {
+    grid-area: i6;
+}
+
+#imagine7 {
+    grid-area: i7;
+}
+
+#imagine8 {
+    grid-area: i8;
+}
+
+@media only screen and (max-width: 1000px) {
+    #containerPrezentare {
+        flex-direction: column-reverse;
+    }
+
+    #containerPrezentare img {
+        margin-top: 0;
+        width: 70%;
+        height: 50%;
+    }
+
+    #prezentareText {
+        padding-top: 3rem;
+        width: 70%;
+    }
+
+    #prezentareText h1{
+        margin-top: 0;
+    }
+
+    #prezentareText p {
+        margin-bottom: -4rem;
+    }
+
+    #containerLocatie {
+        height: 100vh;
+    }
+
+    #containerLocatie h2 {
+        margin-top: -5rem;
+        padding-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    #prezentareLocatie {
+        margin-top: -10rem;
+        flex-direction: column-reverse;
+    }
+
+    #prezentareLocatie img {
+        width: 70%;
+        height: 70%;
+    }
+
+    #prezentareLocatie ul {
+        margin-top: 5rem;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #prezentareLocatie ul li{
+        font-size: 1.3rem;
+    }
+
+    #containerSezoane {
+        height: 140vh;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    #prezentareLocatie img {
+        width: 80%;
+        height: 90%;
+    }
+
+    #containerSezoane {
+        height: 170vh;
+    }
+
+    #containerSezoane h2 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    #containerProgram {
+        height: 150vh;
+    }
+
+    #containerArticole {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #containerGalerie {
+        height: 330vh;
+        justify-content: left;
+    }
+
+    #galerieFoto {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        width: 60vw;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #containerSezoane {
+        height: 200vh;
+    }
+
+    .infoCard div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoCard div p {
+        width: 80%;
+    }
+
+    #containerGalerie {
+        height: 280vh;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    #containerGalerie {
+        height: 240vh;
+    }
+}

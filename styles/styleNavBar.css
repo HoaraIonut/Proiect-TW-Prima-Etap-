@@ -17,11 +17,14 @@ nav { /*setari de baza nav*/
     height: 5rem;
 }
 
-#elementeNav > p {
-    color: #F3FCF0;
+#elementeNav > a {
+    text-decoration: none;
+    background-color: reds;
     margin-left: 2rem;
-    margin-top: auto;
-    margin-bottom: auto;
+}
+
+#elementeNav > a > p {
+    color: #F3FCF0;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;

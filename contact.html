@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styleNavBar.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <title>Travel Now - Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id = "elementeNav">
+                <a href="index.html"><p>TRAVEL NOW</p></a>
+                <ul>
+                    <li><a href="index.html">Despre noi</a></li>
+                    <li>Ofertele Companiei
+                        <ul id = "listaLocatiiOferta">
+                            <li><a href="mula.html">Mula</a></li>
+                            <li><a href="newyork.html">New York</a></li>
+                            <li><a href="dubai.html">Dubai</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id = "elementeNavMediaQ">
+                <ul>
+                    <li><a href="index.html">Despre noi</a></li>
+                    <li>Ofertele Companiei
+                        <ul id = "listaLocatiiOfertaMediaQ">
+                            <li><a href="mula.html">Mula</a></li>
+                            <li><a href="newyork.html">New York</a></li>
+                            <li><a href="dubai.html">Dubai</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id = "contact">
+        <div>
+            <img src="images/pui.gif" alt="Gif cu un pui">
+            <h1>Contact</h1>
+        </div>
+        <p>Trimite informațiile personale în legătură cu oferta de care ești intersat, iar noi o să te contactăm prin mail sau apel pentru mai multe detalii.</p>
+        <form action="">
+            <div class = "tipDiv1">
+                <div>
+                    <label for="lname">Nume: </label>
+                    <input type="text" name="lastname" id="lname" placeholder="Numele meu este...">
+                </div>
+                <div>
+                    <label for="fname">Prenume: </label>
+                    <input type="text" name="firstname" id="fname" placeholder="Prenumele meu este...">
+                </div>
+            </div>
+            <div class="tipDiv1">
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="exemplu@gmail.com">
+                </div>
+                <div>
+                    <label for="phone">Telefon: </label>
+                    <input type="text" name="telefon" id="telefon" placeholder="07xxxxxxxx">
+                </div>
+            </div>
+            <div id = "oferte">
+                <p>Oferta/Ofertele de care sunt intersat:</p>
+                <div>
+                    <label for="mula">Mula</label>
+                    <input type="checkbox" value = "Mula" id="mula">
+                    <label for="newyork">New York</label>
+                    <input type="checkbox" value = "New York" id="newyork">
+                    <label for="dubai">Dubai</label>
+                    <input type="checkbox" value = "Dubai" id="dubai">
+                </div>
+            </div>
+            <div class="tipDiv2">
+                <label for="sugestii">Sugestii</label>
+                <textarea name="sugestii" id="sugestii" placeholder="Aș dori să știu mai multe despre..."></textarea>
+            </div>
+            <button id = "sendButton">Trimite</button>
+        </form>
+    </section>
+    <footer>
+        <div id = "elementeFooter">
+            <p>©2023 Hoară Dumitru-Ionuț, Proiect TW</p>
+        </div>
+    </footer>
+</body>
+</html>
