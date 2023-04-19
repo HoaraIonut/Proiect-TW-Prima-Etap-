@@ -1,4 +1,4 @@
-# Proiect-Tehnici Web-Prima-Etapa
+# Proiect-Tehnici-Web-Prima-Etapa
 Cerinte pentru partea de HTML si CSS (10 puncte):
 
 * fisiere separate pentru HTML si CSS;
